@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.geolab.seatbeltapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/RequestUpdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Request Updates"/>
+
+        <Button
+            android:id="@+id/RemoveUpdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Remove Updates"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alarm_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Put your Seatbelt On !"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/turn_alarm_off"/>
+
+    <Button
+        android:id="@id/turn_alarm_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off Alarm !"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
